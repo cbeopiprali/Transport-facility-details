@@ -1680,13 +1680,40 @@ var surveyJSON = {
 		}
 	    ]
         },
-//         {
-//           "type": "text",
-//           "name": "date",
-//           "title": "Date of the Data",
-//           "inputType": "date",
-//           "min": "2020-12-01"
-//         },
+        {
+          "type": "text",
+          "name": "date",
+          "title": "Date of the Data",
+          "inputType": "date",
+          "min": "2020-12-01"
+        },
+	       {
+              "name": "Is School Building Covered with CCTV",
+              "cellType": "dropdown",
+              "isRequired": true,
+             "choices": [
+                "YES",
+                "NO"
+                 ]
+             },
+	       {
+              "name": "Is School Classrooms Covered with CCTV",
+              "cellType": "dropdown",
+              "isRequired": true,
+             "choices": [
+                "YES",
+                "NO"
+                 ]
+             },
+	       {
+              "name": "Is School Have Transport Facility",
+              "cellType": "dropdown",
+              "isRequired": true,
+             "choices": [
+                "YES",
+                "NO"
+                 ]
+             },
         {
           "type": "matrixdynamic",
           "name": "question2",
@@ -1694,18 +1721,65 @@ var surveyJSON = {
           "isRequired": true,
           "columns": [
              {
-//              "name": "School with CCTV",
-//              "cellType": "dropdown",
-//              "isRequired": true,
-//              "choices": [
-//                "YES",
-//                "NO"
+              "name": "Type of Vehicle",
+              "cellType": "dropdown",
+              "isRequired": true,
+             "choices": [
+                "Bus",
+                "Mini Bus",
+		  "Van",
+		   "Jeep",
+		   "Auto"
                  ]
-//             },
-//             {
-//              "name": "Class",
-//              "cellType": "dropdown",
-//              "isRequired": true,
+             },
+            {
+             "name": "Model of Vehicle",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Model of Vehicle",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Registration No ",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Vehicle Owner Name with Address and Mobile",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Driver Name,Address and Mobile",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Driver Licence no with Validity",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		  {
+             "name": "Conductor Name Address and Mobile",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
+		    {
+             "name": "Is Police Verification Done for Both",
+             "cellType": "text",
+             "isRequired": true,
+		    ]
+	    },
 //              "choices": [
 //                "Class 1",
 //                "Class 2",
@@ -1764,57 +1838,57 @@ var surveyJSON = {
 //        "Urdu Literature"
 //        ]
 //       },
-            {
-              "name": "Child Age Group",
-              "cellType": "dropdown",
-              "isRequired": true,
-              "choices": [
-		  "(6-14)"
-	     ]
-            },
-		  {
-              "name": "Date Of Child Right Club Gathan",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "date"
-            },
-		  {
-              "name": "Total Boys in Club",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "number"
-            },
-            {
-              "name": "Total Girls in Club",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "number"
-            },
-            {
-              "name": "Name of Club In Charge",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "text"
-            },
-            {
-              "name": "Mobile No of In Charge",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "number"
-            },
-            {
-              "name": "Meetings be Conducted Regularly Yes/No",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "text"
-            },
-            {
-              "name": "Date of Last Meeting Conducted",
-              "cellType": "text",
-              "isRequired": true,
-              "inputType": "date"
-            }
-          ],
+//             {
+//               "name": "Child Age Group",
+//               "cellType": "dropdown",
+//               "isRequired": true,
+//               "choices": [
+// 		  "(6-14)"
+// 	     ]
+//             },
+// 		  {
+//               "name": "Date Of Child Right Club Gathan",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "date"
+//             },
+// 		  {
+//               "name": "Total Boys in Club",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "number"
+//             },
+//             {
+//               "name": "Total Girls in Club",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "number"
+//             },
+//             {
+//               "name": "Name of Club In Charge",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "text"
+//             },
+//             {
+//               "name": "Mobile No of In Charge",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "number"
+//             },
+//             {
+//               "name": "Meetings be Conducted Regularly Yes/No",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "text"
+//             },
+//             {
+//               "name": "Date of Last Meeting Conducted",
+//               "cellType": "text",
+//               "isRequired": true,
+//               "inputType": "date"
+//             }
+//           ],
           "columnLayout": "horizontal",
           "detailPanelMode": "underRow",
           "horizontalScroll": true,
