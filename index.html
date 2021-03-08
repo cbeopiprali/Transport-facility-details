@@ -1689,16 +1689,19 @@ var surveyJSON = {
         },
 	  {
           "type": "text",
+	  "name": "buildingCCTV",
           "title": "School Building Covered with CCTV",
           "inputType": "text"
 	   },
 	{
           "type": "text",
+	 "name": "classroomsCCTV",
           "title": "School Classrooms Covered with CCTV",
           "inputType": "text"
 	 },
 	 {
           "type": "text",
+	  "name":"balvahini",
           "title": "Is School Have Transport Facility",
           "inputType": "text"
 	 },
@@ -1790,9 +1793,9 @@ function sendDataToServer(survey) {
                      			"entry.1785323253": data.date,
 					"entry.1908890411": data.peeoName,
 					"entry.1067569861": data.schoolName,
-					"entry.212836102": data["School Building Covered with CCTV"],
-					"entry.924304277": data["School Classrooms Covered with CCTV"],
-					"entry.1480093348": data["Is School Have Transport Facility"],
+					"entry.212836102": data.buildingCCTV,
+					"entry.924304277": data.classroomsCCTV,
+					"entry.1480093348": data.balvahini,
 					"entry.1759134009": q["Type of Vehicle"],
 					"entry.1807354475": q["Model of Vehicle"],
 					"entry.94185084": q["Registration No"],
