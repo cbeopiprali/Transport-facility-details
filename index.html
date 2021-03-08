@@ -1689,18 +1689,15 @@ var surveyJSON = {
         },
 	       {
           "type": "text",
-          "name": "Is School Building Covered with CCTV",
-          "title": "Building CCTV",
+          "title": "School Building Covered with CCTV",
           "inputType": "text",
 		        {
           "type": "text",
-          "name": "Is School Classrooms Covered with CCTV",
-          "title": "Classroom CCTV",
+          "title": "School Classrooms Covered with CCTV",
           "inputType": "text",
 		        {
           "type": "text",
-          "name": "Is School Have Transport Facility",
-          "title": "Transport Facility",
+          "title": "Is School Have Transport Facility",
           "inputType": "text",
 	    },
         {
@@ -1708,6 +1705,13 @@ var surveyJSON = {
           "name": "question2",
           "title": "Fill Details",
           "isRequired": true,
+	  "columnLayout": "horizontal",
+          "detailPanelMode": "underRow",
+          "horizontalScroll": true,
+          "columnMinWidth": "100px",
+          "minRowCount": 1,
+          "confirmDelete": true,
+          "confirmDeleteText": "Are you sure?",
           "columns": [
              {
               "name": "Type of Vehicle",
@@ -1716,169 +1720,51 @@ var surveyJSON = {
              "choices": [
                 "Bus",
                 "Mini Bus",
-		  "Van",
-		   "Jeep",
-		   "Auto"
+		"Van",
+		"Jeep",
+		"Auto"
                  ]
              },
             {
              "name": "Model of Vehicle",
              "cellType": "text",
-             "isRequired": true,
-		    ]
+             "isRequired": true
 	    },
-		  {
+		{
              "name": "Registration No ",
              "cellType": "text",
              "isRequired": true,
-		    ]
 	    },
 		  {
              "name": "Vehicle Owner Name with Address and Mobile",
              "cellType": "text",
-             "isRequired": true,
-		    ]
+             "isRequired": true
 	    },
 		  {
              "name": "Driver Name,Address and Mobile",
              "cellType": "text",
-             "isRequired": true,
-		    ]
+             "isRequired": true
+		   
 	    },
 		  {
              "name": "Driver Licence no with Validity",
              "cellType": "text",
-             "isRequired": true,
-		    ]
+             "isRequired": true
+		    
 	    },
 		  {
              "name": "Conductor Name Address and Mobile",
              "cellType": "text",
-             "isRequired": true,
-		    ]
+             "isRequired": true
+		    
 	    },
 	    {
              "name": "Is Police Verification Done for Both",
              "cellType": "text",
              "isRequired": true
-		    ]
-	    },
-//              "choices": [
-//                "Class 1",
-//                "Class 2",
-//                "Class 3",
-//                "Class 4",
-//                "Class 5",
-//                "Class 6",
-//                "Class 7",
-//                "Class 8",
-//                "Class 9",
-//                "Class 10",
-//                "Class 11",
-//                "Class 12"
-//               ]
-//             },
-//             {
-//       "name": "Subject",
-//       "cellType": "dropdown",
-//       "isRequired": true,
-//       "choices": [
-//        "Hindi",
-//        "English",
-//        "Maths",
-//        "EVS",
-//        "Science",
-//        "Social Science",
-//        "Sanskrit",
-//        "Urdu",
-//        "Agriculture Science",
-//        "Biology",
-//        "Business Studies",
-//        "Chemistry",
-//        "Computer Science",
-//        "Drawing",
-//        "Economics",
-//        "English Compulsory",
-//        "English Literature",
-//        "Farsi Literature",
-//        "Financial Accountancy",
-//        "Geography",
-//        "Geology",
-//        "Gujarati Literature",
-//        "Hindi Compulsory",
-//        "Hindi Literature",
-//        "History",
-//        "Home Science",
-//        "Information Practices",
-//        "Maths Optional",
-//        "Physics",
-//        "Political Science",
-//        "Psychology",
-//        "Public Administration",
-//        "Punjabi",
-//        "Sindhi Literature",
-//        "Sociology",
-//        "Urdu Literature"
-//        ]
-//       },
-//             {
-//               "name": "Child Age Group",
-//               "cellType": "dropdown",
-//               "isRequired": true,
-//               "choices": [
-// 		  "(6-14)"
-// 	     ]
-//             },
-// 		  {
-//               "name": "Date Of Child Right Club Gathan",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "date"
-//             },
-// 		  {
-//               "name": "Total Boys in Club",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "number"
-//             },
-//             {
-//               "name": "Total Girls in Club",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "number"
-//             },
-//             {
-//               "name": "Name of Club In Charge",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "text"
-//             },
-//             {
-//               "name": "Mobile No of In Charge",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "number"
-//             },
-//             {
-//               "name": "Meetings be Conducted Regularly Yes/No",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "text"
-//             },
-//             {
-//               "name": "Date of Last Meeting Conducted",
-//               "cellType": "text",
-//               "isRequired": true,
-//               "inputType": "date"
-//             }
-//           ],
-          "columnLayout": "horizontal",
-          "detailPanelMode": "underRow",
-          "horizontalScroll": true,
-          "columnMinWidth": "100px",
-          "minRowCount": 1,
-          "confirmDelete": true,
-          "confirmDeleteText": "Are you sure?"
+		    
+	    }
+	   ] 
         }
       ]
     }
