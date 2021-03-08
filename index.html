@@ -1688,32 +1688,21 @@ var surveyJSON = {
           "min": "2020-12-01"
         },
 	       {
-              "name": "Is School Building Covered with CCTV",
-              "cellType": "dropdown",
-              "isRequired": true,
-             "choices": [
-                "YES",
-                "NO"
-                 ]
-             },
-	       {
-              "name": "Is School Classrooms Covered with CCTV",
-              "cellType": "dropdown",
-              "isRequired": true,
-             "choices": [
-                "YES",
-                "NO"
-                 ]
-             },
-	       {
-              "name": "Is School Have Transport Facility",
-              "cellType": "dropdown",
-              "isRequired": true,
-             "choices": [
-                "YES",
-                "NO"
-                 ]
-             },
+          "type": "text",
+          "name": "Is School Building Covered with CCTV",
+          "title": "Building CCTV",
+          "inputType": "text",
+		        {
+          "type": "text",
+          "name": "Is School Classrooms Covered with CCTV",
+          "title": "Classroom CCTV",
+          "inputType": "text",
+		        {
+          "type": "text",
+          "name": "Is School Have Transport Facility",
+          "title": "Transport Facility",
+          "inputType": "text",
+	    },
         {
           "type": "matrixdynamic",
           "name": "question2",
@@ -1733,12 +1722,6 @@ var surveyJSON = {
                  ]
              },
             {
-             "name": "Model of Vehicle",
-             "cellType": "text",
-             "isRequired": true,
-		    ]
-	    },
-		  {
              "name": "Model of Vehicle",
              "cellType": "text",
              "isRequired": true,
@@ -1774,10 +1757,10 @@ var surveyJSON = {
              "isRequired": true,
 		    ]
 	    },
-		    {
+	    {
              "name": "Is Police Verification Done for Both",
              "cellType": "text",
-             "isRequired": true,
+             "isRequired": true
 		    ]
 	    },
 //              "choices": [
